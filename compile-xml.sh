@@ -63,7 +63,7 @@ do_ndk_build () {
     cd "xmlsoft-${PARAM_TARGET}/src/main/jni"
     do_sub_cmd $PARAM_SUB_CMD
     cd -
- 
+
 }
 
 

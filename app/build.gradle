@@ -22,11 +22,11 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':xmlsoft-java')
-    compile project(':xmlsoft-x86')
-    compile project(':xmlsoft-x86_64')
-    compile project(':xmlsoft-mips')
-    compile project(':xmlsoft-mips64')
+//    compile project(':xmlsoft-java')
+//    compile project(':xmlsoft-x86')
+//    compile project(':xmlsoft-x86_64')
+//    compile project(':xmlsoft-mips')
+//    compile project(':xmlsoft-mips64')
     compile 'com.android.support:appcompat-v7:24.2.1'
 
 }
