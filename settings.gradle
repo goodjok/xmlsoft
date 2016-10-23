@@ -1,1 +1,9 @@
-include ':app', ':library'
+include ':app'
+include ':xmlsoft-java'
+
+include ':xmlsoft-armv7a'
+include ':xmlsoft-arm64'
+include ':xmlsoft-x86'
+include ':xmlsoft-x86_64'
+include ':xmlsoft-mips'
+include ':xmlsoft-mips64'

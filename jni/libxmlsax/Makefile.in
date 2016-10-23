@@ -1,0 +1,19 @@
+CC=       @CC@
+OBJS=     libxml.o document.o node.o utils.o xpath_ctx.o xpath_expr.o xpath_obj.o locator.o
+CFLAGS=   @CFLAGS@ @CFLAGS_XML2@ @JDK_INC_DIRS@ -Iautogen -g -O0 -fPIC
+LDFLAGS=  @LIBS_XML2@ @LIBS_TCMALLOC@
+JNILIB=   @JNILIB@
+
+all: $(JNILIB)
+
+$(JNILIB): $(OBJS)
+	$(CC) @FLAG_SHLIB@ -o $@ $(OBJS) $(LDFLAGS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJS)
+	rm -f $(JNILIB)
+
+.PHONY: all clean
